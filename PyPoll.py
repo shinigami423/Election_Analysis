@@ -27,9 +27,9 @@ with open(file_to_load) as election_data:
 # Read the file object with the reader function
     file_reader = csv.reader(election_data)
 
-    # Read and print the header row
+    # Read and skip the header row
     headers = next(file_reader)
-    print(headers)
+    #print(headers)
 
     # Print each row in the csv file
     for row in file_reader:
@@ -49,6 +49,16 @@ with open(file_to_load) as election_data:
         # Add a vote to that candidat's count
         candidate_votes[candidate_name] += 1
 
+# Save the results to our text file.
+with open(file_to_save, "w") as txt_file:
+    election_results = (
+        f"\nElection Results\n"
+        f"-------------------------\n"
+        f"Total Votes: {total_votes:,}\n"
+        f"-------------------------\n")
+    print(election_results, end ="")
+    #save the final vote count to the text file.
+    txt_file.write(election_results)
 
     # Printing results using the list of keys in the dictionary and assign the list of 'votes' to the values
     for candidate_name in candidate_votes:
@@ -62,7 +72,7 @@ with open(file_to_load) as election_data:
         #print(f"{candidate_name}: received {votes} votes.")
 
 
-# Determine if votes are greater than the winning count
+        # Determine if votes are greater than the winning count
         if (votes > winning_count) and (vote_percentage > winning_percentage):
             #set votes to winning_count///for each index in the list
             winning_count = votes
@@ -70,16 +80,23 @@ with open(file_to_load) as election_data:
             winning_percentage = vote_percentage
             #set winninng_candidate to the candidate's name
             winning_candidate = candidate_name
-        
-        print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
-# Print electrion result
+        candidate_results = (f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+        # print candidate results to the terminal
+        print(candidate_results)
+        # add cadidate results to the text file
+        txt_file.write(candidate_results)
+
+    # Print election result
     winning_candidate_summary = (
         f"-------------------------\n"
         f"Winning: {winning_candidate}\n"
         f"Wiinning Vote Count: {winning_count:,} votes\n"
         f"Winning Percentage: {winning_percentage:.1f}%\n"
         f"-------------------------\n")
+    #print winning candidate summary on the terminal
     print(winning_candidate_summary)
+    #add winning candidate summary on the text file
+    txt_file.write(winning_candidate_summary)
 
 
 
@@ -88,9 +105,4 @@ with open(file_to_load) as election_data:
 
 
 
-
-
-
-# Write data to the file
-#    txt_file.write("Counties in the Election\n----------------------------\nArapahoe\nDenver\nJefferson")
 
