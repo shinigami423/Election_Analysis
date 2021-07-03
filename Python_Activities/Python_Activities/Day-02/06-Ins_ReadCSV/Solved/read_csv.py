@@ -4,7 +4,7 @@ import os
 # Module for reading CSV files
 import csv
 
-csvpath = os.path.join('..', 'Resources', 'accounting.csv')
+csvpath = os.path.join("..", "Resources", "accounting.csv")
 
 # # Method 1: Plain Reading of CSV files
 # with open(csvpath, 'r') as file_handler:
