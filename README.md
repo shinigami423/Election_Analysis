@@ -5,22 +5,24 @@ Seth and Tom request for the election audit results and the completion of additi
 
 ## Analysis and Challenges
 ### Dependencies
-There are two denpendencies for our program.The first is the **_csv_** import necessary for us to read the csv file provided by the commission. Second, we have to import the **_os_** to manipulate the paths in order to open and save our results in a text file.
+There are two denpendencies for our program.The first is the **_csv_** import necessary for us to read the csv file provided by the commission. Second, we have to import the **_os_** to manipulate the paths in order to open and save our results in a text file. (below)
 
 ![](Resources/paths.PNG)
 
 
 ### Execution 
 Within the program, we initialize our variables and set them to integer 0 and empty strings. We also created empty lists and dictionaries so we can systematically loop to check/print our election results and county turnout and votes. For example, for the county variables:
+
 ![](Resources/county.PNG)
 
 
-The loops embeded in the first _with_ operation are used to add candidate/county options to our lists and increase their respective vote counts as long as the county does not exist in the the list.
+The loops embeded in the first _with_ operation are used to add candidate/county options to our lists and increase their respective vote counts as long as the county does not exist in the the list. (below)
 
 ![](Resources/loop.PNG)
 
 
-Next we use with **with** command to open a text file we want to save our results. Below are codes we used to print the respective retults:
+Next we use with **with** command to open a text file we want to save our results. Below are codes we used to print the respective results:(below)
+
 ![](Resources/print1.PNG)![](Resources/print2.PNG)![](Resources/print3.PNG)
 
 
@@ -28,7 +30,7 @@ Finally, we inserted within for loops a _.write_ command to print the results on
 
 ![](Resources/write.PNG)
 
-**example code shown saves the result to the file named election_results**
+**example code shown saves the result to the file named election_results.txt**
 
 ### Results
 When we execute the program, it printed the election results on the terminal saved them on election_analysis.txt. Results are as follows:
