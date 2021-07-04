@@ -27,6 +27,7 @@ The overall challenge is fairly straight foward, similiar to the module exercice
 
 ## Summary
 Election results(shown below) are saved on the text file name election_analysis.txt, printing the outcomes the same outline as was printed on the terminal. The largest county turnout is Denver and the winning candidate is Diana DeGette.
+
 ![](Resources/election_results.PNG)
 
 ### Pros and Cons
