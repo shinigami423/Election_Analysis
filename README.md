@@ -27,7 +27,7 @@ The overall challenge is fairly straight foward, similiar to the module exercice
 
 ## Summary
 Election results(shown below) are saved on the text file name election_analysis.txt, printing the outcomes the same outline as was printed on the terminal. The largest county turnout is Denver and the winning candidate is Diana DeGette.
-![](Resources/electrion_results.PNG)
+![](Resources/election_results.PNG)
 
 ### Pros and Cons
 The major pro to this program is the use of csv file and the ability to read all the rows and assigning new candidates/counties that are not in our variable lists/dictionaries. This is significant as we can use data sets that contain more lines(votes in this case) and display the results without changing our codes. This program can be used as long as the file we are trying to read is a _csv file_ and is columned by "Ballot ID","County","Candidate.
