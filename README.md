@@ -38,16 +38,16 @@ When we execute the program, it printed the election results on the terminal sav
 ![](Resources/election_results.PNG)
 
 - **Total votes**
-- **County votes and it's percentages**
+- **County votes and their vote percentages**
 - **The Largest county turnout for the election**
-- **Candidate votes and it's percentages**
-- **Winner of the election**
+- **Candidate votes and their percentages**
+- **Winner of the election, their vote count, and the percentage vote received**
 
 ### Challenges and Difficulties Encountered
 The overall challenge is fairly straight foward, similiar to the module exercices, counting county by votes instead of the candidates by their votes. There were some hiccups using the _os.path.join_ command when loading the file but eventually resolved.
 
 ## Summary
-Election results(shown below) are saved on the text file name election_analysis.txt, printing the outcomes the same outline as was printed on the terminal. The largest county turnout is Denver and the winning candidate is Diana DeGette.
+Election results(shown below) are saved on the text file name election_analysis.txt, printing the outcomes the same outline as was printed on the terminal. The total vote count is 369,711. The largest county turnout is Denver and the winning candidate is Diana DeGette, who received 272,892 votes which accounts for 73.8% of total votes.
 
 
 ### Pros and Cons
