@@ -13,8 +13,9 @@ There are two denpendencies for our program.The first is the **_csv_** import ne
 ### Execution 
 Within the program, we initialize our variables and set them to integer 0 and empty strings. We also created empty lists and dictionaries so we can systematically loop to check/print our election results and county turnout and votes. For example, for the county variables:
 
-```python:Election Analysis.py [5-8]
-
+```
+python:Election Analysis.py [5-8]
+```
 The loops embeded in the first _with_ operation are used to add candidate/county options to our lists and increase their respective vote counts as long as the county does not exist in the the list. (below)
 
 ![](Resources/loop.PNG)
