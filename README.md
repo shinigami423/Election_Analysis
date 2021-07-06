@@ -98,8 +98,8 @@ Winner: Diana DeGette
 Winning Vote Count: 272,892
 Winning Percentage: 73.8%
 -------------------------
-
 ```
+Above printed results contains the following:
 - **Total votes**
 - **County votes and their vote percentages**
 - **The Largest county turnout for the election**
@@ -109,9 +109,8 @@ Winning Percentage: 73.8%
 ### Challenges and Difficulties Encountered
 The overall challenge is fairly straight foward, similiar to the module exercices, counting county by votes instead of the candidates by their votes. There were some hiccups using the _os.path.join_ command when loading the file but eventually resolved.
 
-## Summary
-For the elction commission. The election results below:
-- The total vote count is 369,711. 
+## For the election commission! The election results are as follows:
+- The total vote count is 369,711.
 - The county vote counts:
 	- Jefferson county at 10.5% of total votes with 38,855 votes
 	- Denver at 82.8% of total votes with 306,055 votes
