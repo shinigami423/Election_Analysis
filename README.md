@@ -73,7 +73,7 @@ txt_file.write(election_results)
 **example code shown saves the result to the file named election_results.txt**
 
 ### Results
-When we execute the program, it printed the election results on the terminal saved them on election_analysis.txt. Results are as follows in the election_analysis.txt:
+When we execute the program, it printed the election results on the terminal saved them on election_analysis.txt. Results are as follows on the terminel and election_analysis.txt in the analysis foler:
 
 ```text file: analysis/election_analysis.txt
 
