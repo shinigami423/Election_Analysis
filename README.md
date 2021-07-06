@@ -129,4 +129,4 @@ The major pro to this program is the use of csv file and the ability to read all
 The only con I forsee is unfortunately an issue with _csv_. The program can only read csv files and only if the columns are in the apporpriate order, since we assigned the variables to very specific columns in the file.
 
 ### Other uses for the program
-As addressed above on under Pros and Cons, the program can be utlized for any numbers of candidates and their counties as long as the csv file contains commas seperating the values in the order of "Ballot ID","County","Candidate."
+As addressed above on under Pros and Cons, the program can be utlized for any numbers of candidates and their counties as long as the csv file contains commas seperating the values in the order of "Ballot ID","County","Candidate." For example, we can pull more candidate data for larger elections and the program will output the 5 election outcomes. However, we need to make sure to load the correctly titled files when we assign our variables.
